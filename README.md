@@ -1,5 +1,20 @@
 This script generates random words that sound like English words. It uses a combination of the Natural Language Toolkit (NLTK), Pyphen, and standard Python libraries to analyze a corpus of English text and generate new words based on the patterns it finds.
 
+This code uses the `nltk.corpus.cmudict` module, which is a pronouncing dictionary for North American English. It uses the Carnegie Mellon University Pronouncing Dictionary format. The Pyphen library is a pure Python module to hyphenate text using existing Hunspell hyphenation dictionaries.
+
+Please note that you need to install the nltk and pyphen libraries if you haven’t already. You can do this using pip:
+
+```python
+pip install nltk pyphen
+```
+
+Also, you need to download the cmudict corpus for nltk. You can do this in Python:
+
+```python
+import nltk
+nltk.download('cmudict')
+```
+
 Here are some explanations for the key parts of your script:
 
 1. **Corpus Reading**: The `read_corpus` function reads the Gutenberg corpus from NLTK. This corpus is a large body of English literature that the script uses to learn the patterns of English words.
