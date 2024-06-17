@@ -15,7 +15,7 @@ import nltk
 nltk.download('cmudict')
 ```
 
-Here are some explanations for the key parts of your script:
+Here are some explanations for the key parts of the script:
 
 1. **Corpus Reading**: The `read_corpus` function reads the Gutenberg corpus from NLTK. This corpus is a large body of English literature that the script uses to learn the patterns of English words.
 
@@ -31,4 +31,4 @@ Here are some explanations for the key parts of your script:
 
 7. **Word Printing**: Finally, the `generate_words` function generates a specified number of words and prints them out. It skips any one-syllable words, as per your request.
 
-This script is a simplified model and may not cover all the complexities of English phonotactics. For a more accurate model, you might want to consider using a machine learning approach or a more sophisticated linguistic model.
+This script is a simplified model and may not cover all the complexities of English phonotactics. For a more accurate model, consider using a machine learning approach or a more sophisticated linguistic model.
